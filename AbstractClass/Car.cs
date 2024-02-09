@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-	internal class Program
+	public class Car : Vehicle
 	{
-		static void Main(string[] args)
+		public int NumberOfSeats
 		{
-			_ = new Car
-			{
-				QuantityOnHand = 10
-			};
+			get; set;
+		}
 
-			_ = Console.ReadLine();
+		public int NumberOfDoors
+		{
+			get; set;
 		}
 	}
 }
